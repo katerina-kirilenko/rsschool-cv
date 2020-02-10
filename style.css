@@ -1,0 +1,108 @@
+/* Общие стили */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+  color: #1d1d1d;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.left-column, .right-column {
+  padding: 0 15px;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  color: #00aeff;
+}
+
+section {
+  padding-bottom: 10px;
+}
+
+section h2 {
+  display: inline-block;
+  border-bottom: 3px solid #00aeff;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  list-style-type: none; 
+}
+
+/* Стили хэдера*/
+header .container {  
+  background-color: #eeeeee;
+}
+
+.fio {
+  flex-basis: 60%;
+  align-self: center;
+}
+
+.photo {
+  float: left;
+  margin-right: 20px;
+}
+
+.fio h1 {
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+.fio h4 {
+  margin-top: 6px;
+  text-transform: none;
+}
+
+.contacts {
+  flex-basis: 40%;
+  align-self: center;
+}
+
+.material-icons {
+  margin-right: 8px;
+  font-size: 22px;
+}
+
+.contacts li {
+  display: flex;
+  align-content: center;
+  padding: 7px 0;
+}
+
+/* Стили контента*/
+main .left-column {
+  flex-basis: 40%;
+  border-right: 3px dotted #00aeff;
+} 
+
+main .right-column {
+  flex-basis: 60%;
+  padding-left: 30px;
+}
+
+main li:before {
+  color:#00aeff; 
+  content: "•"; 
+  font-weight: bold;
+  padding-right: 10px; 
+}
+
+.experience a, .portfolio a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #00aeff;
+}
+
+.experience a:hover, .portfolio a:hover {
+  color: #0055a5;
+}
